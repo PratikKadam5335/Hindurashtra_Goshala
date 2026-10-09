@@ -13,6 +13,7 @@
     <!-- CSS
     ============================================ -->
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+    <link rel="stylesheet" href="index.css" />
 
     <link rel="stylesheet" href="assets/css/vendor/vendor.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css" />
@@ -22,6 +23,35 @@
   </head>
 
   <body>
+<!-- ========== Kshatriya Sadhana Sanstha Preloader Start ========== -->
+<div class="kss-preloader" id="kssPreloader" role="status" aria-live="polite">
+
+  <div class="kss-preloader__inner">
+
+    <!-- Title -->
+    <h1 class="kss-preloader__title">क्षत्रिय साधना संस्था</h1>
+
+    <!-- Tagline -->
+    <p class="kss-preloader__tagline">गोसेवा हीच ईश्वरसेवा</p>
+
+    <!-- Loading Bar -->
+    <div class="kss-preloader__bar-wrap">
+      <div class="kss-preloader__bar">
+        <div class="kss-preloader__bar-fill" id="kssBarFill">
+          <div class="kss-preloader__bar-shine"></div>
+        </div>
+      </div>
+      <div class="kss-preloader__percent" id="kssPercent">0%</div>
+    </div>
+
+  </div>
+
+</div>
+<!-- ========== Kshatriya Sadhana Sanstha Preloader End ========== -->
+
+
+
+
     <!--====================  header area ====================-->
     <div class="header-area header-area--default">
       <!-- Header Bottom Wrap Start -->
@@ -41,64 +71,36 @@
                   class="header__navigation menu-style-three d-none d-lg-block"
                 >
                   <nav class="navigation-menu">
-                    <ul>
-                      <li
-                        class="has-children has-children--multilevel-submenu active"
-                      >
+                
+<ul>
+    <li class="active">
+        <a href="#home"><span>मुख्यपृष्ठ</span></a>
+    </li>
 
+    <li>
+        <a href="#about"><span>आमच्याविषयी</span></a>
+    </li>
 
+    <li>
+        <a href="#seva"><span>आमची सेवा</span></a>
+    </li>
 
+    <li>
+        <a href="#gallery"><span>छायाचित्रे</span></a>
+    </li>
 
+   
 
-                        <a href="index.html"><span>Home</span></a>
-                      </li>
-                      <li class="has-children">
-                        <a href="about-us.html"><span>About</span></a>
-                      </li>
-                      <li class="has-children">
-                        <a href="events.html"><span>Event</span></a>
-                      </li>
-                      <li class="has-children has-children--multilevel-submenu">
-                        <a href="service.html"><span>Services</span></a>
-                        <!-- <ul class="submenu">
-                                                <li><a href="it-services.html"><span>IT Services</span></a></li>
-                                            </ul> -->
-                      </li>
-                      <li class="has-children has-children--multilevel-submenu">
-                        <a href="donation.html"><span>Causes</span></a>
-                        <ul class="submenu">
-                          <li>
-                            <a href="causes.html"><span>Causes</span></a>
-                          </li>
-                          <li>
-                            <a href="gallery.html"><span>Gallery</span></a>
-                          </li>
-                          <li>
-                            <a href="mission-and-vision.html"
-                              ><span>Mission & Vision</span></a
-                            >
-                          </li>
-                          <li>
-                            <a href="causes-details.html"
-                              ><span>Causes Details</span></a
-                            >
-                          </li>
-                          <li>
-                            <a href="events-details.html"
-                              ><span>Events Details</span></a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-children">
-                        <a href="contact-us.html"><span>Contact</span></a>
-                      </li>
-                    </ul>
+    <li>
+        <a href="#contact"><span>संपर्क</span></a>
+    </li>
+</ul>
+
                   </nav>
                 </div>
 
                 <div class="header-btn text-end d-none d-sm-block ml-lg-4">
-                  <a class="btn-circle btn-default btn" href="#">Donate</a>
+                  <a class="btn-circle btn-default btn" href="#donation">योगदान द्या</a>
                 </div>
 
                 <!-- mobile menu -->
@@ -127,7 +129,7 @@
 
     <div class="site-wrapper-reveal">
       <!-- ======== Hero Area Start ========== -->
-      <div class="hero-area bg-overlay-black hero-style-01 hindu-hero-bg">
+      <div id="home" class="hero-area bg-overlay-black hero-style-01 hindu-hero-bg">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -136,9 +138,7 @@
                   सर्वे देवा: स्थिता देहे <br />
                    सर्वदेवमयी हि गौः।
                 </h1>
-                <div class="ht-btn-area hero-boder-top">
-                  <a href="#" class="hero-btn">Explore</a>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
 
 
       <!-- ======== Feature Area Start ========== -->
-      <div class="feature-area section-space--pt_90">
+      <div id="seva" class="feature-area section-space--pt_90">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -169,10 +169,10 @@
                   <img src="assets/images/Go-images/sadhna-logo.png" alt="" style="width: 100px;" />
                 </div>
                 <div class="feature-content">
-                  <h5 class="feature-title">Temple</h5>
+                  <h5 class="feature-title">साधना</h5>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting.
+                   आध्यात्मिक जीवनात नियमित साधनेला विशेष महत्त्व आहे.
+
                   </p>
                 </div>
               </div>
@@ -186,10 +186,9 @@
                   <img src="assets/images/Go-images/gomata-logo.png" alt="" style="width: 100px;" />
                 </div>
                 <div class="feature-content">
-                  <h5 class="feature-title">Puja</h5>
+                  <h5 class="feature-title">गोसेवा</h5>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting.
+                 भारतीय संस्कृतीमध्ये गोमातेला श्रद्धा, करुणा, संवर्धन आणि सात्त्विकतेचे प्रतीक मानले जाते.
                   </p>
                 </div>
               </div>
@@ -203,10 +202,9 @@
                   <img src="assets/images/Go-images/dharmjagruti-logo.png" alt="" style="width: 100px;" />
                 </div>
                 <div class="feature-content">
-                  <h5 class="feature-title">Donation</h5>
+                  <h5 class="feature-title">धर्मजागृती</h5>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting.
+                   धर्म, संस्कृती आणि सदाचाराचे महत्त्व समाजापर्यंत पोहोचवून धर्मजागृती घडवणे.
                   </p>
                 </div>
               </div>
@@ -220,10 +218,9 @@
                   <img src="assets/images/Go-images/gurukul-logo.png" alt="" style="width: 100px;" />
                 </div>
                 <div class="feature-content">
-                  <h5 class="feature-title">Education</h5>
+                  <h5 class="feature-title">गुरुकुल संकल्पना</h5>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting.
+                   भारतीय संस्कृती, धर्मशिक्षण आणि सदाचाराच्या माध्यमातून ज्ञानासोबत संस्कारक्षम पिढी घडवणे.
                   </p>
                 </div>
               </div>
@@ -234,14 +231,26 @@
       </div>
       <!-- ======== Feature Area End ========== -->
 
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- ======== Tai About Area Start ========== -->
-      <div class="tai-about-area section-space--ptb_120">
+      <div id="about" class="tai-about-area section-space--ptb_120">
         <div class="container-fluid pl-0 pr-0">
           <div class="row no-gutters align-items-center">
             <div class="col-lg-6">
               <div class="about-tai-image">
                 <img
-                  src="assets/images/banners/tai-about.png"
+                  src="assets/images/Go-images/urvshi-devki.png"
                   class="img-fluid"
                   alt="Tai Images"
                 />
@@ -252,20 +261,30 @@
                 class="about-tai-content col-06__right tablet-mt__30 small-mt__30"
               >
                 <div class="section-title-wrap">
-                  <h3 class="section-title left-style">Taj Temple</h3>
+                  <h3 class="section-title left-style">क्षत्रिय साधना संस्था</h3>
                 </div>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters.
+                ‘क्षत्रिय साधना संस्था’ या धर्मादाय नोंदणीकृत संस्थेअंतर्गत ‘हिंदुराष्ट्र गोशाळा’ या नावाने सातारा जिल्ह्यातील वळसेगाव येथे कत्तलीपासून वाचवलेल्या देशी गोवंशाच्या संगोपनाची सेवा सुरू आहे. मागील १०–१२ वर्षांपासून संस्था गोरक्षणाच्या कार्यात सातत्याने कार्यरत असून, कत्तलीसाठी नेल्या जाणाऱ्या देशी गोवंशाचे संरक्षण करून शक्य असेल तेथे गोशाळांमध्ये त्यांच्या संगोपनाची व्यवस्था करण्याचे कार्य करत आहे. वाचवलेल्या गोमातांना सुरक्षित निवारा, योग्य आहार आणि आवश्यक देखभाल मिळावी, हा या कार्यामागील प्रमुख उद्देश आहे.
                 </p>
+
+
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters.
+              गोसेवा ही केवळ गोवंशाचे पालन-पोषण नसून सेवा, करुणा, त्याग आणि कृतज्ञतेचे संस्कार रुजविण्याचे माध्यम आहे. वयस्कर किंवा दूध देण्यास असमर्थ असलेल्या गोमातांचेही प्रेमाने संगोपन व्हावे आणि समाजामध्ये देशी गोवंशाप्रती प्रेम, आदर व संवेदनशीलता निर्माण व्हावी, यासाठी संस्था प्रयत्नशील आहे. सध्या आसपासच्या गावांमधील सुमारे ६० कुटुंबे ८४ गोमातांचे संगोपन करत आहेत, तर वलसेगाव येथे सुरू असलेल्या गोशाळेच्या बांधकामस्थळी २३ गोवंशांची सेवा केली जात आहे.
                 </p>
+
+
+
+                <p>
+
+                    गोसेवेबरोबरच संस्था ग्रामजागृती, धर्मजागृती आणि मंदिर स्वच्छता यांसारखे सामाजिक व आध्यात्मिक उपक्रम राबवत आहे. सुमारे ८० ते १०० गावांमध्ये धर्मशिक्षण, सदाचार, सेवाभाव आणि भारतीय संस्कृतीतील मूल्यांविषयी जागृती करण्याचे प्रयत्न सुरू आहेत. ग्रामदेवतेच्या मंदिरांची स्वच्छता, दर शनिवारी श्री हनुमान मंदिराची स्वच्छता सेवा, आरती आणि सामूहिक स्तोत्रपठण यांद्वारे समाजामध्ये आध्यात्मिक जाणीव, सामाजिक एकता आणि सेवाभाव वाढविण्याचा प्रयत्न केला जात आहे.
+                </p>
+
+                <p>
+संस्थेचे ध्येय देशी गोवंशाचे संवर्धन, गोआधारित शेती, धर्मशिक्षण, आध्यात्मिक साधना आणि गुरुकुल संकल्पनेच्या माध्यमातून संस्कारक्षम समाज घडवणे हे आहे. गोसेवा, ग्रामसेवा आणि धर्मजागृतीद्वारे समाजाच्या सर्वांगीण उन्नतीसाठी योगदान देणे, हे ‘क्षत्रिय साधना संस्था’ आणि ‘हिंदुराष्ट्र गोशाळा’ यांचे प्रमुख उद्दिष्ट आहे.
+</p>
+
+
+
               </div>
             </div>
           </div>
@@ -273,558 +292,516 @@
       </div>
       <!-- ======== Tai About Area End ========== -->
 
-      <!-- ======== Service Area Start ========== -->
-      <div class="service-area section-space--pb_120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title-wrap text-center">
-                <h3 class="section-title center-style">What we do</h3>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <!-- Single Service Start -->
-              <div class="single-service-wrap mt-30">
-                <div class="service-image">
-                  <a href="#">
-                    <img
-                      src="assets/images/services/hindu-service-01.png"
-                      class="img-fluid"
-                      alt="Service image"
-                    />
-                  </a>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Spiritual Service</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been standard dummy
-                    text.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Service End -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!-- Single Service Start -->
-              <div class="single-service-wrap mt-30">
-                <div class="service-image">
-                  <a href="#">
-                    <img
-                      src="assets/images/services/hindu-service-02.png"
-                      class="img-fluid"
-                      alt="Service image"
-                    />
-                  </a>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Relief Service</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been standard dummy
-                    text.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Service End -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <!-- Single Service Start -->
-              <div class="single-service-wrap mt-30">
-                <div class="service-image">
-                  <a href="#">
-                    <img
-                      src="assets/images/services/hindu-service-03.png"
-                      class="img-fluid"
-                      alt="Service image"
-                    />
-                  </a>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Medical Service</h4>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been standard dummy
-                    text.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Service End -->
-            </div>
-          </div>
+
+
+
+
+
+
+
+
+<!-- ======== Auto Scrolling Gallery Area Start ========== -->
+<div id="gallery" class="auto-gallery-area section-space--ptb_120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title-wrap text-center">
+          <h3 class="section-title center-style">आमची छायाचित्रे</h3>
+          <p class="mt-20">
+            गोशाळेतील क्षणचित्रे — गोसेवा, कार्यक्रम आणि दैनंदिन उपक्रम
+          </p>
         </div>
       </div>
-      <!-- ======== Service Area End ========== -->
+    </div>
+  </div>
 
-      <!-- ======== Donation Area Start ========== -->
-      <div class="donation-area section-space--pb_120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title-wrap text-center">
-                <h3 class="section-title center-style">
-                  Donation Form Our Temple
-                </h3>
-              </div>
+  <!-- Gallery Slider 1 (Left to Right) -->
+  <div class="gallery-marquee-row">
+    <div class="gallery-marquee" id="gallery-marquee-1">
+      <div class="gallery-track">
+        <!-- IMAGE 1 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-01.png" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-01.png" alt="Gallery Image 1" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <!-- Single Donation Wrap Start -->
-              <div class="single-donation-wrap row align-items-center">
-                <div class="col-lg-5">
-                  <div class="donation-image">
-                    <img
-                      src="assets/images/donation/hindu-donate-01.png"
-                      class="img-fluid"
-                      alt="Donation Image"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="donation-content ml-lg-5">
-                    <div class="content-title">
-                      <h4 class="mb-15">Education for all rural children.</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Ipsum has been standard dummy
-                        text. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry.
-                      </p>
-                    </div>
-
-                    <div class="progress-wrap-hindu">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="progress-bar--one">
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.5s"
-                                  data-wow-delay=".3s"
-                                  role="progressbar"
-                                  style="width: 40%"
-                                  aria-valuenow="40"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <p class="percent-label">
-                                    <b>$4500.00 </b><br /><span>NOW</span>
-                                  </p>
-                                </div>
-                              </div>
-
-                              <div class="progress_sold_av">
-                                <p class="start-sold">$00.00</p>
-                                <p class="sold-av">
-                                  $8500.00 <br />
-                                  <span>OUR GOAL</span>
-                                </p>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="donate-btn text-lg-right">
-                            <a href="#" class="btn donate-btn">Donate Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--// Single Donation Wrap End -->
+          </a>
+        </div>
+        <!-- IMAGE 2 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-02.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-02.jpeg" alt="Gallery Image 2" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
             </div>
-
-            <div class="col-lg-12">
-              <!-- Single Donation Wrap Start -->
-              <div class="single-donation-wrap row align-items-center">
-                <div class="col-lg-5">
-                  <div class="donation-image">
-                    <img
-                      src="assets/images/donation/hindu-donate-02.png"
-                      class="img-fluid"
-                      alt="Donation Image"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="donation-content ml-lg-5">
-                    <div class="content-title">
-                      <h4 class="mb-15">Reconstruct or new construct Temple</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Ipsum has been standard dummy
-                        text. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry.
-                      </p>
-                    </div>
-
-                    <div class="progress-wrap-hindu">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="progress-bar--one">
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.5s"
-                                  data-wow-delay=".3s"
-                                  role="progressbar"
-                                  style="width: 30%"
-                                  aria-valuenow="30"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <p class="percent-label">
-                                    <b>$3500.00 </b><br /><span>NOW</span>
-                                  </p>
-                                </div>
-                              </div>
-
-                              <div class="progress_sold_av">
-                                <p class="start-sold">$00.00</p>
-                                <p class="sold-av">
-                                  $5900.00 <br />
-                                  <span>OUR GOAL</span>
-                                </p>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="donate-btn text-lg-right">
-                            <a href="#" class="btn donate-btn">Donate Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--// Single Donation Wrap End -->
+          </a>
+        </div>
+        <!-- IMAGE 3 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-03.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-03.jpeg" alt="Gallery Image 3" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
             </div>
-
-            <div class="col-lg-12">
-              <!-- Single Donation Wrap Start -->
-              <div class="single-donation-wrap row align-items-center">
-                <div class="col-lg-5">
-                  <div class="donation-image">
-                    <img
-                      src="assets/images/donation/hindu-donate-03.png"
-                      class="img-fluid"
-                      alt="Donation Image"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="donation-content ml-lg-5">
-                    <div class="content-title">
-                      <h4 class="mb-15">Ensure child safety & health</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Ipsum has been standard dummy
-                        text. Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry.
-                      </p>
-                    </div>
-
-                    <div class="progress-wrap-hindu">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="progress-bar--one">
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.5s"
-                                  data-wow-delay=".3s"
-                                  role="progressbar"
-                                  style="width: 55%"
-                                  aria-valuenow="55"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <p class="percent-label">
-                                    <b>$5500.00 </b><br /><span>NOW</span>
-                                  </p>
-                                </div>
-                              </div>
-
-                              <div class="progress_sold_av">
-                                <p class="start-sold">$00.00</p>
-                                <p class="sold-av">
-                                  $6500.00 <br />
-                                  <span>OUR GOAL</span>
-                                </p>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="donate-btn text-lg-right">
-                            <a href="#" class="btn donate-btn">Donate Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--// Single Donation Wrap End -->
+          </a>
+        </div>
+        <!-- IMAGE 4 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-04.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-04.jpeg" alt="Gallery Image 4" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
             </div>
-          </div>
+          </a>
+        </div>
+        <!-- IMAGE 5 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-05.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-05.jpeg" alt="Gallery Image 5" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
+            </div>
+          </a>
+        </div>
+        <!-- IMAGE 6 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-06.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-06.jpeg" alt="Gallery Image 6" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
+            </div>
+          </a>
+        </div>
+        <!-- IMAGE 7 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-07.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-07.jpeg" alt="Gallery Image 7" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
+            </div>
+          </a>
+        </div>
+        <!-- IMAGE 8 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-08.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-08.jpeg" alt="Gallery Image 8" />
+            <div class="gallery-overlay">
+              <i class="flaticon-add"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- ⚠️ IMPORTANT: Duplicate copies for infinite loop -->
+        <!-- (JS automatically clone करेल, manually add करण्याची गरज नाही) -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Slider 2 (Right to Left — reverse direction) -->
+  <div class="gallery-marquee-row mt-30">
+    <div class="gallery-marquee gallery-marquee--reverse" id="gallery-marquee-2">
+      <div class="gallery-track">
+        <!-- IMAGE 9 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-09.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-09.jpeg" alt="Gallery Image 9" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 10 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-10.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-10.jpeg" alt="Gallery Image 10" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 11 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-11.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-11.jpeg" alt="Gallery Image 11" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 12 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-12.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-12.jpeg" alt="Gallery Image 12" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 13 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-13.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-13.jpeg" alt="Gallery Image 13" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 14 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-14.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-14.jpeg" alt="Gallery Image 14" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 15 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-15.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-15.jpeg" alt="Gallery Image 15" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
+        </div>
+        <!-- IMAGE 16 -->
+        <div class="gallery-item">
+          <a href="assets/images/Go-gallery/gallery-16.jpeg" class="gallery-link">
+            <img src="assets/images/Go-gallery/gallery-16.jpeg" alt="Gallery Image 16" />
+            <div class="gallery-overlay"><i class="flaticon-add"></i></div>
+          </a>
         </div>
       </div>
-      <!-- ======== Donation Area End ========== -->
+    </div>
+  </div>
 
-      <!-- ======== Hindu Video Area Start ========== -->
-      <div class="hindu-video-area">
-        <div class="container-fluid container-fluid--cp-100">
-          <div
-            class="hindu-video-bg hindu-video-section-pb bg-overlay-black border-radius-5"
-          >
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="video-content-wrap text-center position-relative">
-                  <div class="icon">
-                    <a
-                      href="../../../www.youtube.com/watch4459.html?v=d7jAiAYusUg"
-                      class="video-link popup-youtube"
-                      ><img
-                        src="assets/images/icons/play-circle.png"
-                        alt="Video Icon"
-                    /></a>
-                  </div>
-                  <div class="content section-space--mt_80">
-                    <h3 class="text-white mb-10">
-                      Best speech on religious life
-                    </h3>
-                    <p class="text-white">
-                      On the other hand, we denounce with righteous indignation
-                      and dislike men who are so beguiled and demoralized by the
-                      charms of pleasure of the moment
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+</div>
+<!-- ======== Auto Scrolling Gallery Area End ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== Donation / QR Scanner Area Start ========== -->
+<div id="donation" class="donation-qr-area section-space--ptb_120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title-wrap text-center">
+          <h3 class="section-title center-style">योगदान द्या</h3>
+          <p class="mt-20">
+            गोसेवेसाठी तुमचे योगदान द्या — QR Code Scan करा किंवा खालील
+            UPI ID वापरा
+          </p>
         </div>
       </div>
-      <!-- ========  Hindu Video Area End ========== -->
-
-      <!-- ======== Others Activities Area Start ========== -->
-      <div class="others-activities-area section-space--ptb_120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title-wrap text-center">
-                <h3 class="section-title center-style">Others Activities</h3>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- Single Activities Start -->
-              <div class="single-activities-wrap">
-                <a href="#" class="activities-imgaes">
-                  <img
-                    src="assets/images/activities/hindu-activities-01.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </a>
-                <div class="activities-content text-center">
-                  <div class="widget-metadata"><span>South Temple</span></div>
-                  <a href="#">
-                    <h4 class="activities-title">Spiritual Service</h4>
-                  </a>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Activities End -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- Single Activities Start -->
-              <div class="single-activities-wrap">
-                <a href="#" class="activities-imgaes">
-                  <img
-                    src="assets/images/activities/hindu-activities-02.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </a>
-                <div class="activities-content text-center">
-                  <div class="widget-metadata"><span>South Temple</span></div>
-                  <a href="#">
-                    <h4 class="activities-title">Spiritual Service</h4>
-                  </a>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Activities End -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- Single Activities Start -->
-              <div class="single-activities-wrap">
-                <a href="#" class="activities-imgaes">
-                  <img
-                    src="assets/images/activities/hindu-activities-03.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </a>
-                <div class="activities-content text-center">
-                  <div class="widget-metadata"><span>South Temple</span></div>
-                  <a href="#">
-                    <h4 class="activities-title">Spiritual Service</h4>
-                  </a>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                </div>
-              </div>
-              <!--// Single Activities End -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ======== Others Activities Area End ========== -->
     </div>
 
-    <!--========== Footer Area Start ==========-->
-    <footer class="footer-area bg-footer">
-      <div class="footer-top section-space--ptb_80 section-pb text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="widget-footer mt-30">
-                <div class="footer-title">
-                  <h6>Address</h6>
-                </div>
-                <div class="footer-contents">
-                  <ul>
-                    <li>
-                      <span>Temple 1: </span> 777/ed Ipum Road Venu Demon Ipsum.
-                      28400
-                    </li>
-                    <li>
-                      <span>Temple 2: </span> 577/ed Ipum Road Venu Demon Ipsum.
-                      15400
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6">
-              <div class="widget-footer mt-30">
-                <div class="footer-title">
-                  <h6>Related Links</h6>
-                </div>
-                <div class="footer-contents">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="events.html">Event</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="causes.html">Causes</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="widget-footer mt-30">
-                <div class="footer-title">
-                  <h6>Information</h6>
-                </div>
-                <div class="footer-contents">
-                  <ul>
-                    <li>Sun Rise: 6:00 am</li>
-                    <li>Sun Sat: 5:50 pm</li>
-                    <li>Start Time: 9:00 am</li>
-                    <li>End Time: 11.00 pm</li>
-                    <li>Lunch: 01:30 pm</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="widget-footer mt-30">
-                <div class="footer-title">
-                  <h6>Related Links</h6>
-                </div>
-                <div class="footer-logo mb-15">
-                  <a href="index.html"
-                    ><img src="assets/images/logo/footer-logo.png" alt=""
-                  /></a>
-                </div>
-                <div class="footer-contents">
-                  <p>Subscribe to our Newsletter & stay update.</p>
-                  <div class="newsletter-box">
-                    <input type="text" placeholder="Enter your mail address" />
-                    <button><i class="flaticon-paper-plane"></i></button>
-                  </div>
+    <div class="row align-items-center">
+      <!-- LEFT SIDE: Payment Information -->
+      <div class="col-lg-6 col-md-6">
+        <div class="donation-info-wrap">
 
-                  <ul class="footer-social-share mt-20">
-                    <li>
-                      <a href="#"><i class="flaticon-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="flaticon-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="flaticon-pinterest-social-logo"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="flaticon-youtube"></i></a>
-                    </li>
-                  </ul>
-                </div>
+          <!-- Heading -->
+          <div class="donation-heading">
+            <h4>गोसेवा निधी</h4>
+            <p>
+              तुमच्या छोट्या योगदानाने गोमातांचे संगोपन, आहार आणि
+              वैद्यकीय सेवा शक्य होते.
+            </p>
+          </div>
+
+          <!-- UPI / PhonePe / GPay / Paytm Number -->
+          <div class="single-payment-item">
+            <div class="payment-icon-box">
+              <i class="flaticon-smartphone"></i>
+            </div>
+            <div class="payment-text">
+              <h5>UPI / PhonePe / GPay / Paytm</h5>
+              <p class="upi-number">
+                <strong>goshala@upi</strong>
+              </p>
+              <p class="upi-mobile">
+                Mobile: <a href="tel:+917057261313">+91 70572 61313</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Bank Account Details -->
+          <div class="single-payment-item">
+            <div class="payment-icon-box">
+              <i class="flaticon-bank"></i>
+            </div>
+            <div class="payment-text">
+              <h5>Bank Account Details</h5>
+              <ul class="bank-details-list">
+                <li><span>Account Name:</span> क्षत्रिय साधना संस्था</li>
+                <li><span>Account Number:</span> 1234567890123</li>
+                <li><span>IFSC Code:</span> SBIN0001234</li>
+                <li><span>Bank:</span> State Bank of India, सातारा</li>
+                <li><span>Branch:</span> वळसेगाव</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Payment Apps Icons -->
+          <div class="payment-apps-wrap">
+            <h5>स्वीकारल्या जाणाऱ्या पेमेंट पद्धती</h5>
+            <ul class="payment-apps-list">
+              <li><span class="app-badge">PhonePe</span></li>
+              <li><span class="app-badge">GPay</span></li>
+              <li><span class="app-badge">Paytm</span></li>
+              <li><span class="app-badge">UPI</span></li>
+              <li><span class="app-badge">BHIM</span></li>
+            </ul>
+          </div>
+
+          <!-- Note -->
+          <div class="donation-note">
+            <p>
+              <strong>Note:</strong> Payment केल्यानंतर कृपया
+              <a href="tel:+917057261313">+९१ ७०५७२६१३१३</a> वर
+              screenshot पाठवा.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: QR Scanner -->
+      <div class="col-lg-6 col-md-6">
+        <div class="qr-scanner-wrap text-center">
+
+          <div class="qr-inner">
+            <!-- QR Code Image -->
+            <div class="qr-image">
+              <img
+                src="assets/images/Go-images/qr-code.png"
+                alt="Donation QR Code"
+                class="img-fluid"
+              />
+            </div>
+
+            <!-- Scan Instruction -->
+            <div class="qr-content">
+              <h4>Scan & Pay</h4>
+              <p>
+                कोणत्याही UPI App ने QR Code Scan करा
+              </p>
+
+              <!-- Scan Icon / Animation -->
+              <div class="scan-icon">
+                <i class="flaticon-scan"></i>
+              </div>
+
+              <!-- UPI ID below QR -->
+              <div class="qr-upi">
+                <p>UPI ID: <strong>goshala@upi</strong></p>
+              </div>
+
+              <!-- Download QR Button -->
+              <div class="qr-btn-wrap">
+                <a
+                  href="assets/images/Go-images/qr-code.png"
+                  download
+                  class="btn qr-btn"
+                >
+                  <i class="flaticon-download"></i> Download QR
+                </a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
-      <div class="footer-bottom-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copy-right-box">
-                <p class="text-white">
-                  Copyright &copy; 2020 Hastech
-                  <a href="../../../hasthemes.com/index.html" target="_blank"
-                    >All Right Reserved</a
-                  >.
-                </p>
-                <p class="text-white"><a href="#">Privacy policy</a></p>
-              </div>
+
+    </div>
+  </div>
+</div>
+<!-- ======== Donation / QR Scanner Area End ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== Contact Area Start ========== -->
+<div id="contact" class="contact-area section-space--ptb_120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title-wrap text-center">
+          <h3 class="section-title center-style">संपर्क</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- LEFT SIDE: Address, Phone, Social -->
+      <div class="col-lg-5 col-md-6">
+        <div class="contact-info-wrap">
+
+          <!-- Address -->
+          <div class="single-contact-item">
+            <div class="contact-icon-box">
+              <i class="flaticon-placeholder"></i>
             </div>
+            <div class="contact-text">
+              <h5>पत्ता</h5>
+              <p>
+                हिंदुराष्ट्र गोशाळा,<br />
+                वळसे, ता. जि. सातारा,<br />
+                महाराष्ट्र - ४१५५१९
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="single-contact-item">
+            <div class="contact-icon-box">
+              <i class="flaticon-phone-call"></i>
+            </div>
+            <div class="contact-text">
+              <h5>भ्रमणध्वनी क्र.</h5>
+              <p>
+                <a href="tel:+917057261313">+९१ ७०५७२६१३१३</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Email (Optional) -->
+          <div class="single-contact-item">
+            <div class="contact-icon-box">
+              <i class="flaticon-email"></i>
+            </div>
+            <div class="contact-text">
+              <h5>ई-मेल</h5>
+              <p>
+                <a href="mailto:info@goshala.org">info@goshala.org</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="contact-social-wrap">
+            <h5>आमच्याशी जोडले जा</h5>
+            <ul class="footer-social-share mt-20">
+              <li>
+                <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                  <i class="flaticon-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                  <i class="flaticon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/yourpage" target="_blank" aria-label="Twitter">
+                  <i class="flaticon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+                  <i class="flaticon-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Google Map -->
+      <div class="col-lg-7 col-md-6">
+        <div class="contact-map-wrap">
+          <iframe
+            src="https://www.google.com/maps/place/Hindu+Rastra+Goshala+Valase/@17.6226614,74.0232271,2118m/data=!3m1!1e3!4m6!3m5!1s0x3bc23136b04c00db:0xa99730b925c87f06!8m2!3d17.6151429!4d74.0304846!16s%2Fg%2F11ssy02gy6?authuser=0&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+            width="100%"
+            height="500"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======== Contact Area End ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--========== Footer Area Start ==========-->
+<footer class="footer-area bg-footer">
+  <div class="footer-top section-space--ptb_80 section-pb text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="widget-footer mt-30">
+
+            <!-- Goshala Name -->
+            <div class="footer-title text-center" style="display: inline-block;">
+              <h6>Kshatriy Sadhana Sanstha</h6>
+            </div>
+
+            <!-- Address + Mobile -->
+            <div class="footer-contents mt-20">
+              <p>
+                हिंदुराष्ट्र गोशाळा, वळसे, ता. जि. सातारा, महाराष्ट्र - ४१५००१
+              </p>
+              <p class="mt-10">
+                <a href="tel:+917057261313">📞 +९१ ७०५७२६१३१३</a>
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
-    </footer>
-    <!--==========// Footer Area End ==========-->
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copy-right-box" style="justify-content: center;">
+            <p class="text-white">
+              Copyright &copy; <span id="footer-year"></span>
+              Kshatriy Sadhana Sanstha — All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--==========// Footer Area End ==========-->
 
     <!--====================  scroll top ====================-->
     <a href="#" class="scroll-top" id="scroll-top">
@@ -833,100 +810,104 @@
     </a>
     <!--====================  End of scroll top  ====================-->
 
-    <!--====================  mobile menu overlay ====================-->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-      <div class="mobile-menu-overlay__inner">
+
+
+
+
+<!--==================== Mobile Menu Overlay ====================-->
+
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-overlay__inner">
+
+        <!-- Mobile Menu Header -->
         <div class="mobile-menu-overlay__header">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-md-6 col-8">
-                <!-- logo -->
-                <div class="logo">
-                  <a href="index.html">
-                    <img
-                      src="assets/images/logo/logo.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </a>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 col-8">
+                        <div class="logo">
+                            <a href="#home">
+                                <img
+                                    src="assets/images/logo/logo.png"
+                                    class="img-fluid"
+                                    alt="हिंदुराष्ट्र गोशाळा"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-4">
+                        <div class="mobile-menu-content text-end">
+                            <span
+                                class="mobile-navigation-close-icon"
+                                id="mobile-menu-close-trigger"
+                            ></span>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-              <div class="col-md-6 col-4">
-                <!-- mobile menu content -->
-                <div class="mobile-menu-content text-end">
-                  <span
-                    class="mobile-navigation-close-icon"
-                    id="mobile-menu-close-trigger"
-                  ></span>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
+
+        <!-- Mobile Navigation -->
         <div class="mobile-menu-overlay__body">
-          <nav class="offcanvas-navigation">
-            <ul>
-              <li class="has-children">
-                <a href="index.html">Home</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="index.html"><span>Home 1</span></a>
-                  </li>
-                  <li>
-                    <a href="index-2.html"><span>Home 2</span></a>
-                  </li>
-                  <li>
-                    <a href="index-3.html"><span>Home 3</span></a>
-                  </li>
-                  <li>
-                    <a href="index-4.html"><span>Home 4</span></a>
-                  </li>
+            <nav class="offcanvas-navigation">
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            मुख्यपृष्ठ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            आमच्याविषयी
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#seva">
+                            आमची सेवा
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery">
+                            छायाचित्रे
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#donation">
+                            योगदान द्या
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            संपर्क
+                        </a>
+                    </li>
+
                 </ul>
-              </li>
-              <li class="has-children">
-                <a href="about-us.html">about</a>
-              </li>
-              <li class="has-children">
-                <a href="events.html">Evnets</a>
-              </li>
-              <li class="has-children">
-                <a href="service.html">Services</a>
-              </li>
-              <li class="has-children">
-                <a href="causes.html">Causes</a>
-              </li>
-              <li class="has-children">
-                <a href="javascript:void(0)">Pages</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="gallery.html"><span>Gallery</span></a>
-                  </li>
-                  <li>
-                    <a href="mission-and-vision.html"
-                      ><span>Mission & Vision</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="causes-details.html"
-                      ><span>Causes Details</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="events-details.html"
-                      ><span>Events Details</span></a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <a href="contact-us.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
+            </nav>
         </div>
-      </div>
+
     </div>
-    <!--====================  End of mobile menu overlay  ====================-->
+</div>
+
+<!--==================== End Mobile Menu Overlay ====================-->
+
+
+
+
+
+
+
+
+
+
 
     <!-- JS
     ============================================ -->
@@ -947,6 +928,128 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+
+
+
+<!-- ========== Preloader JS Start ========== -->
+<script>
+(function ($) {
+  "use strict";
+
+  $(document).ready(function () {
+    var $preloader = $("#kssPreloader");
+    var $fill = $("#kssBarFill");
+    var $percent = $("#kssPercent");
+
+    if (!$preloader.length) return;
+
+    $("body").addClass("kss-preloader-active");
+
+    var progress = 0;
+    var pageLoaded = false;
+    var forceHidden = false;
+    var intervalId = null;
+
+    function setProgress(value) {
+      progress = Math.min(100, Math.max(0, value));
+      $fill.css("width", progress + "%");
+      $percent.text(Math.floor(progress) + "%");
+    }
+
+    function hidePreloader() {
+      if (forceHidden) return;
+      forceHidden = true;
+      $preloader.addClass("kss-loaded");
+      $("body").removeClass("kss-preloader-active");
+      setTimeout(function () { $preloader.remove(); }, 900);
+      if (intervalId) clearInterval(intervalId);
+    }
+
+    setProgress(0);
+
+    // Smooth progress — max 90% until page really loads
+    intervalId = setInterval(function () {
+      if (pageLoaded) {
+        var next = progress + Math.max(4, (100 - progress) * 0.25);
+        setProgress(next);
+        if (progress >= 99.5) {
+          setProgress(100);
+          setTimeout(hidePreloader, 350);
+        }
+      } else {
+        if (progress < 90) {
+          var step = progress < 30 ? 6 : progress < 60 ? 3 : 1.2;
+          setProgress(progress + step * Math.random() + 0.4);
+        }
+      }
+    }, 140);
+
+    $(window).on("load", function () { pageLoaded = true; });
+
+    if (document.readyState === "complete") { pageLoaded = true; }
+
+    // Failsafe 1 — 8s नंतर accelerate
+    setTimeout(function () { if (!forceHidden) pageLoaded = true; }, 8000);
+
+    // Failsafe 2 — 12s नंतर force hide
+    setTimeout(function () {
+      if (!forceHidden) {
+        setProgress(100);
+        hidePreloader();
+      }
+    }, 12000);
+  });
+})(jQuery);
+</script>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(
+        ".site-wrapper-reveal > div"
+    );
+
+    if (!("IntersectionObserver" in window)) {
+        sections.forEach(section => {
+            section.classList.add("section-visible");
+        });
+        return;
+    }
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("section-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.08
+    });
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+
+
+
+
+
+<!-- ========== Preloader JS End ========== -->
+
+
+
   </body>
 
   <!-- Mirrored from htmldemo.net/stomv/stomv/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Aug 2026 08:57:07 GMT -->

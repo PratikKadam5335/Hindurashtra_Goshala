@@ -2716,7 +2716,35 @@ input[type="checkbox"] {
 }
 .hindu-hero-bg {
   background: url(../images/Go-images/devki-bg.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hindu-hero-bg {
+    background-position: 60% center;   /* Cow थोडी डावीकडे */
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .hindu-hero-bg {
+    background-position: 70% center;   /* Cow center ला */
+  }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 479px) {
+  .hindu-hero-bg {
+    background-position: 75% center;   /* Cow अजून adjust */
+  }
+}
+
+
+
+
 .hero-style-01 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3477,10 +3505,13 @@ input[type="checkbox"] {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);   /* ⬅️ 60% black — खूप dark */
   content: "";
   border-radius: 5px;
 }
+
+
+
 .newsletter-bg {
   background: url(../images/bg/newsletter-bg.png);
   background-size: cover;
