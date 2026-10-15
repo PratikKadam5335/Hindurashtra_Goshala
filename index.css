@@ -2,6 +2,16 @@
    Contact Area Custom Styles
    ============================================ */
 
+
+
+   .body{
+
+ font-family: "Hind", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+   }
+
 .contact-area {
   background-color: #fff;
 }
@@ -749,7 +759,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .gallery-item:hover .gallery-link img {
@@ -853,8 +863,14 @@
 
 
 
+
+
+
+
+
+
 /* ==========================================================
-   KShatriya SADHANA SANSTHA — MINIMAL PRELOADER
+   PRELOADER — Logo with Rotating Circular Rings (BIG LOGO)
    ========================================================== */
 
 .kss-preloader {
@@ -877,65 +893,167 @@
   pointer-events: none;
 }
 
-/* Prevent background scroll */
 body.kss-preloader-active {
   overflow: hidden !important;
   height: 100vh;
 }
 
-/* Inner container */
 .kss-preloader__inner {
   text-align: center;
   padding: 20px;
-  max-width: 500px;
+  max-width: 600px;
   width: 90%;
 }
 
-/* Title */
-.kss-preloader__title {
-  font-family: "Libre Baskerville", "Open Sans", serif;
-  font-size: 42px;
-  font-weight: 800;
-  color: #8b2c0f;
-  margin: 0 0 10px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.6),
-    0 4px 12px rgba(139, 44, 15, 0.15);
-  animation: kssFadeIn 0.8s ease both;
+/* ==========================================================
+   LOGO STAGE — मोठा केला (220 → 300)
+   ========================================================== */
+
+.kss-preloader__logo-stage {
+  position: relative;
+  width: 300px;              /* ⬅️ 220 → 300 */
+  height: 300px;             /* ⬅️ 220 → 300 */
+  margin: 0 auto 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: kssLogoFadeIn 1s ease both;
 }
 
-/* Tagline */
-.kss-preloader__tagline {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: #a0522d;
-  margin: 0 0 35px;
-  letter-spacing: 1.5px;
-  animation: kssFadeIn 0.8s ease 0.2s both;
+/* ==========================================================
+   ROTATING RINGS — मोठे केले
+   ========================================================== */
+
+.kss-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform-origin: center center;
+  pointer-events: none;
 }
 
-@keyframes kssFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Ring 1 — Solid golden, outermost (220 → 300) */
+.kss-ring-1 {
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  border: 2.5px solid transparent;
+  border-top-color: #d4952b;
+  border-right-color: #f2b263;
+  border-bottom-color: #d4952b;
+  border-left-color: transparent;
+  animation: kssRotateCW 4s linear infinite;
+  box-shadow: 0 0 25px rgba(242, 178, 99, 0.35);
 }
 
-/* Progress bar wrap */
+/* Ring 2 — Inner, counter-clockwise (180 → 240) */
+.kss-ring-2 {
+  width: 240px;
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -120px;
+  border: 2.5px solid transparent;
+  border-top-color: transparent;
+  border-right-color: #e8a72d;
+  border-bottom-color: #e8a72d;
+  border-left-color: #e8a72d;
+  animation: kssRotateCCW 3s linear infinite;
+  opacity: 0.85;
+}
+
+/* Ring 3 — Dashed, mid size (200 → 270) */
+.kss-ring-3 {
+  width: 270px;
+  height: 270px;
+  margin-top: -135px;
+  margin-left: -135px;
+  border: 2.5px dashed rgba(212, 149, 43, 0.55);
+  animation: kssRotateCW 8s linear infinite;
+}
+
+/* Rotations */
+@keyframes kssRotateCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes kssRotateCCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+/* ==========================================================
+   GLOW — मोठा केला (140 → 200)
+   ========================================================== */
+
+.kss-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(242, 178, 99, 0.4) 0%,
+    rgba(242, 178, 99, 0.15) 40%,
+    rgba(242, 178, 99, 0) 70%
+  );
+  animation: kssGlowPulse 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes kssGlowPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50%      { transform: scale(1.25); opacity: 1; }
+}
+
+/* ==========================================================
+   LOGO IMAGE — मोठी केली (150 → 220)
+   ========================================================== */
+
+.kss-preloader__logo-img {
+  position: relative;
+  z-index: 2;
+  width: 220px;              /* ⬅️ 150 → 220 */
+  height: 220px;             /* ⬅️ 150 → 220 */
+  object-fit: contain;
+  border-radius: 50%;
+  filter: drop-shadow(0 8px 22px rgba(180, 140, 80, 0.35));
+  animation: kssLogoBreathe 3s ease-in-out infinite;
+}
+
+@keyframes kssLogoFadeIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes kssLogoBreathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+
+/* ==========================================================
+   LOADING BAR
+   ========================================================== */
+
 .kss-preloader__bar-wrap {
   display: flex;
   align-items: center;
   gap: 14px;
-  animation: kssFadeIn 0.8s ease 0.4s both;
+  animation: kssFadeIn 0.8s ease 0.5s both;
 }
 
-/* Bar */
+@keyframes kssFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .kss-preloader__bar {
   flex: 1;
   height: 10px;
@@ -948,24 +1066,17 @@ body.kss-preloader-active {
     0 4px 15px rgba(242, 178, 99, 0.25);
 }
 
-/* Bar fill */
 .kss-preloader__bar-fill {
   height: 100%;
   width: 0%;
   border-radius: 22px;
-  background: linear-gradient(
-    90deg,
-    #d2691e 0%,
-    #f2b263 50%,
-    #ffd89b 100%
-  );
+  background: linear-gradient(90deg, #d2691e 0%, #f2b263 50%, #ffd89b 100%);
   position: relative;
-  transition: width 0.35s ease;
+  transition: width 0.2s ease;
   box-shadow: 0 0 12px rgba(255, 200, 100, 0.6);
   overflow: hidden;
 }
 
-/* Shine animation */
 .kss-preloader__bar-shine {
   position: absolute;
   inset: 0;
@@ -979,11 +1090,10 @@ body.kss-preloader-active {
 }
 
 @keyframes kssShine {
-  0% { transform: translateX(-100%); }
+  0%   { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
 }
 
-/* Percent */
 .kss-preloader__percent {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -995,28 +1105,59 @@ body.kss-preloader-active {
 }
 
 /* ==========================================================
-   RESPONSIVE
+   RESPONSIVE — सर्व sizes proportionally मोठे केले
    ========================================================== */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .kss-preloader__title { font-size: 34px; }
-  .kss-preloader__tagline { font-size: 14px; }
+  .kss-preloader__logo-stage { width: 260px; height: 260px; margin-bottom: 40px; }
+  .kss-ring-1 { width: 260px; height: 260px; margin-top: -130px; margin-left: -130px; }
+  .kss-ring-2 { width: 208px; height: 208px; margin-top: -104px; margin-left: -104px; }
+  .kss-ring-3 { width: 234px; height: 234px; margin-top: -117px; margin-left: -117px; }
+  .kss-preloader__logo-img { width: 190px; height: 190px; }
+  .kss-glow { width: 175px; height: 175px; margin-top: -87.5px; margin-left: -87.5px; }
 }
 
 @media only screen and (max-width: 767px) {
-  .kss-preloader__title { font-size: 26px; letter-spacing: 0.5px; }
-  .kss-preloader__tagline { font-size: 12px; letter-spacing: 1px; margin-bottom: 25px; }
+  .kss-preloader__logo-stage { width: 220px; height: 220px; margin-bottom: 30px; }
+  .kss-ring-1 { width: 220px; height: 220px; margin-top: -110px; margin-left: -110px; border-width: 2px; }
+  .kss-ring-2 { width: 176px; height: 176px; margin-top: -88px; margin-left: -88px; border-width: 2px; }
+  .kss-ring-3 { width: 198px; height: 198px; margin-top: -99px; margin-left: -99px; border-width: 2px; }
+  .kss-preloader__logo-img { width: 160px; height: 160px; }
+  .kss-glow { width: 145px; height: 145px; margin-top: -72.5px; margin-left: -72.5px; }
   .kss-preloader__bar { height: 8px; }
   .kss-preloader__percent { font-size: 13px; min-width: 40px; }
   .kss-preloader__bar-wrap { gap: 10px; }
 }
 
 @media only screen and (max-width: 479px) {
-  .kss-preloader__title { font-size: 22px; }
-  .kss-preloader__tagline { font-size: 11px; }
+  .kss-preloader__logo-stage { width: 190px; height: 190px; margin-bottom: 25px; }
+  .kss-ring-1 { width: 190px; height: 190px; margin-top: -95px; margin-left: -95px; border-width: 1.5px; }
+  .kss-ring-2 { width: 152px; height: 152px; margin-top: -76px; margin-left: -76px; border-width: 1.5px; }
+  .kss-ring-3 { width: 171px; height: 171px; margin-top: -85.5px; margin-left: -85.5px; border-width: 1.5px; }
+  .kss-preloader__logo-img { width: 135px; height: 135px; }
+  .kss-glow { width: 120px; height: 120px; margin-top: -60px; margin-left: -60px; }
   .kss-preloader__bar { height: 7px; border-width: 1.5px; }
   .kss-preloader__percent { font-size: 12px; min-width: 36px; }
 }
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .kss-ring,
+  .kss-preloader__logo-img,
+  .kss-glow,
+  .kss-preloader__bar-shine {
+    animation: none;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1025,7 +1166,7 @@ body.kss-preloader-active {
 .site-wrapper-reveal > div {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* Visible section */
