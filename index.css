@@ -1105,51 +1105,350 @@ body.kss-preloader-active {
 }
 
 /* ==========================================================
-   RESPONSIVE — सर्व sizes proportionally मोठे केले
+   PRELOADER — RESPONSIVE (Mobile Optimized)
    ========================================================== */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .kss-preloader__logo-stage { width: 260px; height: 260px; margin-bottom: 40px; }
-  .kss-ring-1 { width: 260px; height: 260px; margin-top: -130px; margin-left: -130px; }
-  .kss-ring-2 { width: 208px; height: 208px; margin-top: -104px; margin-left: -104px; }
-  .kss-ring-3 { width: 234px; height: 234px; margin-top: -117px; margin-left: -117px; }
-  .kss-preloader__logo-img { width: 190px; height: 190px; }
-  .kss-glow { width: 175px; height: 175px; margin-top: -87.5px; margin-left: -87.5px; }
-}
-
-@media only screen and (max-width: 767px) {
-  .kss-preloader__logo-stage { width: 220px; height: 220px; margin-bottom: 30px; }
-  .kss-ring-1 { width: 220px; height: 220px; margin-top: -110px; margin-left: -110px; border-width: 2px; }
-  .kss-ring-2 { width: 176px; height: 176px; margin-top: -88px; margin-left: -88px; border-width: 2px; }
-  .kss-ring-3 { width: 198px; height: 198px; margin-top: -99px; margin-left: -99px; border-width: 2px; }
-  .kss-preloader__logo-img { width: 160px; height: 160px; }
-  .kss-glow { width: 145px; height: 145px; margin-top: -72.5px; margin-left: -72.5px; }
-  .kss-preloader__bar { height: 8px; }
-  .kss-preloader__percent { font-size: 13px; min-width: 40px; }
-  .kss-preloader__bar-wrap { gap: 10px; }
-}
-
-@media only screen and (max-width: 479px) {
-  .kss-preloader__logo-stage { width: 190px; height: 190px; margin-bottom: 25px; }
-  .kss-ring-1 { width: 190px; height: 190px; margin-top: -95px; margin-left: -95px; border-width: 1.5px; }
-  .kss-ring-2 { width: 152px; height: 152px; margin-top: -76px; margin-left: -76px; border-width: 1.5px; }
-  .kss-ring-3 { width: 171px; height: 171px; margin-top: -85.5px; margin-left: -85.5px; border-width: 1.5px; }
-  .kss-preloader__logo-img { width: 135px; height: 135px; }
-  .kss-glow { width: 120px; height: 120px; margin-top: -60px; margin-left: -60px; }
-  .kss-preloader__bar { height: 7px; border-width: 1.5px; }
-  .kss-preloader__percent { font-size: 12px; min-width: 36px; }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .kss-ring,
-  .kss-preloader__logo-img,
-  .kss-glow,
-  .kss-preloader__bar-shine {
-    animation: none;
+/* ---------- Large Desktop (1200px - 1499px) ---------- */
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .kss-preloader__logo-stage {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 45px;
+  }
+  .kss-ring-1 {
+    width: 280px;
+    height: 280px;
+    margin-top: -140px;
+    margin-left: -140px;
+  }
+  .kss-ring-2 {
+    width: 224px;
+    height: 224px;
+    margin-top: -112px;
+    margin-left: -112px;
+  }
+  .kss-ring-3 {
+    width: 252px;
+    height: 252px;
+    margin-top: -126px;
+    margin-left: -126px;
+  }
+  .kss-preloader__logo-img {
+    width: 200px;
+    height: 200px;
+  }
+  .kss-glow {
+    width: 185px;
+    height: 185px;
+    margin-top: -92.5px;
+    margin-left: -92.5px;
   }
 }
 
+/* ---------- Small Desktop (992px - 1199px) ---------- */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .kss-preloader__logo-stage {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+  .kss-ring-1 {
+    width: 250px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -125px;
+  }
+  .kss-ring-2 {
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+  .kss-ring-3 {
+    width: 225px;
+    height: 225px;
+    margin-top: -112.5px;
+    margin-left: -112.5px;
+  }
+  .kss-preloader__logo-img {
+    width: 180px;
+    height: 180px;
+  }
+  .kss-glow {
+    width: 165px;
+    height: 165px;
+    margin-top: -82.5px;
+    margin-left: -82.5px;
+  }
+}
+
+/* ---------- Tablet (768px - 991px) ---------- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .kss-preloader__inner {
+    max-width: 500px;
+  }
+  .kss-preloader__logo-stage {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 35px;
+  }
+  .kss-ring-1 {
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    margin-left: -110px;
+    border-width: 2px;
+  }
+  .kss-ring-2 {
+    width: 176px;
+    height: 176px;
+    margin-top: -88px;
+    margin-left: -88px;
+    border-width: 2px;
+  }
+  .kss-ring-3 {
+    width: 198px;
+    height: 198px;
+    margin-top: -99px;
+    margin-left: -99px;
+    border-width: 2px;
+  }
+  .kss-preloader__logo-img {
+    width: 155px;
+    height: 155px;
+  }
+  .kss-glow {
+    width: 145px;
+    height: 145px;
+    margin-top: -72.5px;
+    margin-left: -72.5px;
+  }
+  .kss-preloader__bar {
+    height: 9px;
+  }
+  .kss-preloader__percent {
+    font-size: 14px;
+    min-width: 42px;
+  }
+}
+
+/* ---------- Mobile Large (576px - 767px) ---------- */
+@media only screen and (max-width: 767px) {
+  .kss-preloader__inner {
+    max-width: 400px;
+    width: 92%;
+    padding: 15px;
+  }
+  .kss-preloader__logo-stage {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 28px;
+  }
+  .kss-ring-1 {
+    width: 170px;
+    height: 170px;
+    margin-top: -85px;
+    margin-left: -85px;
+    border-width: 2px;
+  }
+  .kss-ring-2 {
+    width: 136px;
+    height: 136px;
+    margin-top: -68px;
+    margin-left: -68px;
+    border-width: 1.8px;
+  }
+  .kss-ring-3 {
+    width: 153px;
+    height: 153px;
+    margin-top: -76.5px;
+    margin-left: -76.5px;
+    border-width: 1.8px;
+  }
+  .kss-preloader__logo-img {
+    width: 120px;
+    height: 120px;
+  }
+  .kss-glow {
+    width: 110px;
+    height: 110px;
+    margin-top: -55px;
+    margin-left: -55px;
+  }
+  .kss-preloader__bar {
+    height: 8px;
+    border-width: 1.5px;
+  }
+  .kss-preloader__bar-fill {
+    border-radius: 20px;
+  }
+  .kss-preloader__percent {
+    font-size: 13px;
+    min-width: 38px;
+  }
+  .kss-preloader__bar-wrap {
+    gap: 10px;
+  }
+}
+
+/* ---------- Mobile Medium (480px - 575px) ---------- */
+@media only screen and (max-width: 575px) {
+  .kss-preloader__inner {
+    max-width: 350px;
+    width: 94%;
+    padding: 12px;
+  }
+  .kss-preloader__logo-stage {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 24px;
+  }
+  .kss-ring-1 {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    border-width: 1.8px;
+  }
+  .kss-ring-2 {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    border-width: 1.5px;
+  }
+  .kss-ring-3 {
+    width: 135px;
+    height: 135px;
+    margin-top: -67.5px;
+    margin-left: -67.5px;
+    border-width: 1.5px;
+  }
+  .kss-preloader__logo-img {
+    width: 105px;
+    height: 105px;
+  }
+  .kss-glow {
+    width: 95px;
+    height: 95px;
+    margin-top: -47.5px;
+    margin-left: -47.5px;
+  }
+  .kss-preloader__bar {
+    height: 7px;
+    border-width: 1.5px;
+  }
+  .kss-preloader__percent {
+    font-size: 12px;
+    min-width: 36px;
+  }
+  .kss-preloader__bar-wrap {
+    gap: 8px;
+  }
+}
+
+/* ---------- Mobile Small (up to 479px) ---------- */
+@media only screen and (max-width: 479px) {
+  .kss-preloader__inner {
+    max-width: 300px;
+    width: 95%;
+    padding: 10px;
+  }
+  .kss-preloader__logo-stage {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 22px;
+  }
+  .kss-ring-1 {
+    width: 130px;
+    height: 130px;
+    margin-top: -65px;
+    margin-left: -65px;
+    border-width: 1.5px;
+  }
+  .kss-ring-2 {
+    width: 104px;
+    height: 104px;
+    margin-top: -52px;
+    margin-left: -52px;
+    border-width: 1.5px;
+  }
+  .kss-ring-3 {
+    width: 117px;
+    height: 117px;
+    margin-top: -58.5px;
+    margin-left: -58.5px;
+    border-width: 1.5px;
+  }
+  .kss-preloader__logo-img {
+    width: 90px;
+    height: 90px;
+  }
+  .kss-glow {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+  .kss-preloader__bar {
+    height: 6px;
+    border-width: 1.5px;
+  }
+  .kss-preloader__bar-fill {
+    border-radius: 15px;
+  }
+  .kss-preloader__percent {
+    font-size: 11px;
+    min-width: 32px;
+  }
+  .kss-preloader__bar-wrap {
+    gap: 6px;
+  }
+}
+
+/* ---------- Extra Small (up to 360px) ---------- */
+@media only screen and (max-width: 360px) {
+  .kss-preloader__logo-stage {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+  .kss-ring-1 {
+    width: 110px;
+    height: 110px;
+    margin-top: -55px;
+    margin-left: -55px;
+  }
+  .kss-ring-2 {
+    width: 88px;
+    height: 88px;
+    margin-top: -44px;
+    margin-left: -44px;
+  }
+  .kss-ring-3 {
+    width: 99px;
+    height: 99px;
+    margin-top: -49.5px;
+    margin-left: -49.5px;
+  }
+  .kss-preloader__logo-img {
+    width: 78px;
+    height: 78px;
+  }
+  .kss-glow {
+    width: 68px;
+    height: 68px;
+    margin-top: -34px;
+    margin-left: -34px;
+  }
+  .kss-preloader__bar {
+    height: 5px;
+  }
+  .kss-preloader__percent {
+    font-size: 10px;
+    min-width: 28px;
+  }
+}
 
 
 
